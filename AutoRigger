@@ -35,7 +35,6 @@ class AutoRigger():
         
         base.formLayout(form, edit = True, attachForm=((tabs, 'top',0), (tabs,'left', 0), (tabs, 'right', 0), (tabs, 'bottom',0)))
 
-        # set the layout of the window
 
         ch1 = base.rowColumnLayout(nc = 1, cal = (1, 'right'), adjustableColumn = True)
         
@@ -76,7 +75,8 @@ class AutoRigger():
         ch4 = base.rowColumnLayout(nc = 1, cal = (1, 'right'), adjustableColumn = True)
         base.button(l = "Add Facial Joints", w = 200, c = self.FaceJoints)
         base.separator(st = 'none')
-        
+
+
         base.setParent('..')        
         ch5 = base.rowColumnLayout(nc = 1, cal = (1, 'right'), adjustableColumn = True)        
         
@@ -90,7 +90,6 @@ class AutoRigger():
         
         base.tabLayout(tabs, edit = True, tabLabel = ((ch1, 'Settings'), (ch2, 'Locators'), (ch3, 'Body Rig'), (ch4, 'Face Rig'), (ch5, 'Finalize') ))
                
-        # show the actual window
         base.showWindow()
     
     def NextTab(self, void):
